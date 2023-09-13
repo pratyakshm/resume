@@ -1,0 +1,222 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+	{#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+	\item\small{
+    	{#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+	\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+  	\textbf{#1} & \textbf{\small #2} \\
+  	\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  	\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+	\item
+	\begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+  	\small#1 & \textbf{\small }\\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+	{\Huge \scshape Pratyaksh Mehrotra} \\ \vspace{1pt}
+	\small \raisebox{-0.1\height}\ +91 629 088 0586 ~ \href{mailto:pratyakshm.p@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{pratyakshm.p@gmail.com}} ~
+	\href{https://linkedin.com/in/pratyakshm/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin}}
+	\vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+	\resumeSubheading
+  	{University of Engineering \& Management, Kolkata}{2021 -- 2025}
+  	{Bachelor of Technology in Computer Science \& Engineering (CGPA of 8.7)}{Kolkata, India}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+	\resumeSubheading
+  	{OPPO \& OnePlus}{2022'}
+  	{Product Tester - Freelance}{Remote}
+  	\resumeItemListStart
+    \resumeItem{Conducted meticulous evaluation of over \textbf{5 prototypes} and hunted more than \textbf{500 bugs} (\textbf{70+ critical ones}) before they were released in the market, resulting in a significantly improved and stable user experience.}
+    \resumeItem{Collaborated with cross-functional teams across the company, providing valuable feedback. Consistently ranked in \textbf{top 10} out of thousands of other \textbf{product testers} in South Asia region.}
+    \resumeItem{Made serious contribution to OPPO's astounding Q1 2023 performance, resulting in a sharp \textbf{100\%} increase in user growth compared to Q1 2022, with sales skyrocketing from \textbf{13 million units} to an impressive \textbf{27 million units}.}
+    \resumeItem{Spearheaded testing efforts for OPPO's latest flagship models, including the cutting-edge OPPO Reno 10 Pro+ 5G, ensuring optimal performance and user satisfaction.}
+	\resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+	\vspace{-5pt}
+	\resumeSubHeadingListStart
+   	\resumeProjectHeading
+      	{\textbf{WinRice} $|$ \emph{Git, PowerShell, YAML, Windows Registry, Automated Testing}  $|$ \underline{\href{https://github.com/pratyakshm/WinRice}{Source code}}}{2020 - present (3 yrs)}
+      	\resumeItemListStart
+        	\resumeItem{Engineered and crafted WinRice, a PowerShell script revolutionizing new Windows device setup, catering to a massive user base of \textbf{5000+ people}. It has gathered \textbf{300+ stars} on GitHub.}
+            \resumeItem{Strengthened privacy and fortified security measures by systematically disabling non-essential tasks and eliminating superfluous apps and features.}
+            \resumeItem{Worked with the open source community to develop and introduce new features based on user feedback.}
+      	\resumeItemListEnd
+       \vspace{-13 pt}
+	\resumeProjectHeading
+      	{\textbf{RevengeOS} $|$ \emph{Git, Bash, CI/CD, C, Makefile Java, Kotlin} $|$ \underline{\href{https://web.archive.org/web/20220109120922/https://revengeos.com/}{Website (archived)}}}{2020 - 2022 (2 yrs)}
+      	\resumeItemListStart
+        	\resumeItem{Headed a dynamic team in successfully \textbf{developing and launching RevengeOS 4.1}, revolutionizing the Android aftermarket firmware landscape with its unparalleled consistency, performance, and elegant design.}
+        	\resumeItem{Garnered an impressive global user base with over \textbf{600K unique downloads}, demonstrating the widespread adoption and acclaim for RevengeOS.}
+            \resumeItem{Amplified brand recognition and engagement through a visually stunning UI, driving over \textbf{1 million website visits} and capturing user interest.}
+            \resumeItem{Re-established RevengeOS as a top player in the Android custom firmware community, attaining remarkable success with the release of versions 4.0 and 4.1, solidifying our position in the arena.}
+            \resumeItem{\textbf{Developed RevengeOS for Xiaomi Redmi 5} (codename: rosy), delivering a seamless experience to a large user base across the globe.}
+            \resumeItem{Elevated the Android experience for aftermarket firmware users by optimizing memory management, extending battery life, and enhancing device performance, surpassing the capabilities of MIUI.}
+      	\resumeItemListEnd
+
+	   \vspace{-13pt}
+       \resumeProjectHeading
+      	{\textbf{FlameGApps} $|$ \emph{Git, Bash, CI/CD}  $|$ \underline{\href{https://flamegapps.github.io/}{Website}}}{ 2019 - present (4 yrs)}
+      	\resumeItemListStart
+            \resumeItem{FlameGApps is a firm and consistent player in the Android scene. We’ve continued to ship updated GApps for Android 10, 11 and 12 as soon as they went GA.}
+        	\resumeItem{Served as the Co-Founder of a custom Google Apps package project which is now widely popular among the global Android aftermarket firmware scene, with over \textbf{1.7 million} downloads.}
+            \resumeItem{Used feedback to drive build quality and improve user experience.}
+            \resumeItemListEnd
+	\resumeSubHeadingListEnd
+\vspace{-15pt}
+
+%
+
+%-----------Activities-----------
+\section{Activities}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+	\resumeItemListStart
+        \resumeItem{Got a \underline{\href{https://www.credly.com/badges/784601b7-0eed-4f17-a87e-19077df232da/public_url}{Microsoft certificate in the Security, Compliance, and Identity Fundamentals}} category, showcasing expertise by achieving an \textbf{outstanding score of 890/1000} on the SC-900 exam.}
+    	\resumeItem{\textbf{Winner} in \textbf{Design and Aesthetic category} at the esteemed Bay Area Hacks hackathon, competing against a diverse field of over \textbf{400 participants}.}
+        \resumeItem{Student Partner at Nothing Technology Limited.}
+        \resumeItem{Cloud \& DevOps Lead at Google Developer Student Clubs, UEMK, 2023-24.}
+        \resumeItem{Incoming Microsoft Learn Student Ambassador.}
+  	\resumeItemListEnd
+ \end{itemize}
+ \vspace{-16pt}
+
+%
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+ 	\textbf{Languages}{: Bash, PowerShell, Python, Go, YAML, C\#, Java, HTML, CSS, JavaScript  \\
+ 	\textbf{Technologies/Frameworks/Libraries}{: Git, Linux, CI/CD, Docker, GitOps, Azure, GCP, AWS, ReactJS, React Router, Redux, Figma } \\
+	}}
+ \end{itemize}
+ \vspace{-16pt}
+
+\end{document}
+
+
+
